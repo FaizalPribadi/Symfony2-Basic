@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset=utf-8" />
+        <title>{% block title %}Faizal Symfony{% endblock %} </title>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+		{% block javascripts %}
+		<script src="{{ asset('assets/js/jquery.js') }}"></script>
+		<script src="{{ asset('assets/js/bootstrap-carousel.js') }}"></script>
+		<script type="text/javascript">
+		$('.carousel').carousel({
+			interval: 2000
+		});
+		</script>
+		{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('assets/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />
+			<link href="{{ asset('assets/css/bootstrap-responsive.css') }}" type="text/css" rel="stylesheet" />
+			<link href="{{ asset('assets/js/google-code-prettify/prettify.css') }}" type="text/css" rel="stylesheet" />
+		<style type="text/css">
+			body {
+			padding-top: 60px;
+			padding-bottom: 40px;
+		}
+		</style>
+        {% endblock %}
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+	
+    {% block body %}{% endblock %}
+	
+    </body>
+</html>

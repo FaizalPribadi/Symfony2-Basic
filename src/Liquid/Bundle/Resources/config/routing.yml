@@ -1,0 +1,5 @@
+LiquidBundle_homepage:
+    pattern:  /
+    defaults: { _controller: LiquidBundle:Page:index }
+    requirements:
+        _method:  GET

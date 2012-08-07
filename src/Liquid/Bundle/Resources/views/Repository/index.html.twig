@@ -1,0 +1,41 @@
+<h1>Repository list</h1>
+
+<table class="records_list">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Url</th>
+            <th>Author</th>
+            <th>Condition</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for entity in entities %}
+        <tr>
+            <td><a href="{{ path('repository_show', { 'id': entity.id }) }}">{{ entity.id }}</a></td>
+            <td>{{ entity.url }}</td>
+            <td>{{ entity.author }}</td>
+            <td>{{ entity.condition }}</td>
+            <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('repository_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('repository_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+<ul>
+    <li>
+        <a href="{{ path('repository_new') }}">
+            Create a new entry
+        </a>
+    </li>
+</ul>

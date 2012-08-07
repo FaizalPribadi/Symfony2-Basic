@@ -1,0 +1,7 @@
+parameters:
+#    liquid.example.class: Liquid\Bundle\Example
+
+services:
+#    liquid.example:
+#        class: %liquid.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

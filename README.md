@@ -3,5 +3,5 @@
 
 ## Screenshots
 
-![Screenshot of Symfony2 Twitter by Faizal Pribadi, Frontend Screenshoot.](http://s1-03.twitpicproxy.com/photos/full/632677020.png?key=1024768 "Bundle Web Homepage")
+![Screenshot of Symfony2 Twitter by Faizal Pribadi, Frontend Screenshoot.](https://lh3.googleusercontent.com/-g8M_Nrxz9aE/UExpj4xFEPI/AAAAAAAAAI8/xYTDXBKl0rg/s585/screenshoot.png "Bundle Web Homepage")
 
